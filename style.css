@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+/* sets the background color for entire page */
+body{
+  background-color:aliceblue;
+}
+
+/* styles the header container */
+header{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
+  border: 10px;
+  background-color: rgba(124, 172, 190, 0.582);
+}
+
+/* sets the color for the heading and sub-heading */
+h1, h3{
+  color: rgba(9, 9, 100, 0.918);
+}
+
+/* sets the font family of h1 */
+h1{
+  font-family: 'Abril Fatface', cursive;
+}
+
+/* sets the font family of h3 */
+h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/* sets the font family of the links within the nav container */
+nav > a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* styles and centers the image */
+.round-pic{
+  display: block;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* styles the hello, about-me, and contact containers */
+.hello-container, .about-me-container, .contact-container{
+  width: 55%;
+  text-align: left;
+  margin: auto;
+  height: 300px;
+}
+
+/* styles the h2 elements */
+h2{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: rgba(79, 104, 39, 0.829);
+}
+
+/* styles the text within the paragraph and list elements */
+p, li{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(64, 77, 43);
+}
+
+/* aligns the lists left */
+ul, ol{
+  text-align: left;
+  margin-left: 5%;
+}
+
+/* styles the footer at the bottom of the page */
+footer{
+  background-color: rgba(124, 172, 190, 0.582);
+  padding: 10px;
+  color: rgba(9, 9, 100, 0.918);
+  text-align: center;
+}
+
+/* sets the width of the horizontal rules */
+hr{
+  width: 60%;
+}
+
+/* centers the text within the thanks container */
+.thanks{
+  text-align: center;
+}
+
+/* sets pseudolinks for the webpage's links */
+a:link {color: blue;}
+a:visited {color: purple;}
+a:hover {color: green;}
+a:active {color: pink;}
+
+
+
+
