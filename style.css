@@ -5,14 +5,14 @@
 /* sets the background color for entire page */
 body{
   background-color:aliceblue;
+  margin: 0;
 }
 
 /* styles the header container */
 header{
   text-align: center;
   padding: 20px;
-  margin-bottom: 0;
-  border: 10px;
+  margin: 0;
   background-color: rgba(124, 172, 190, 0.582);
 }
 
@@ -90,6 +90,7 @@ hr{
 /* centers the text within the thanks container */
 .thanks{
   text-align: center;
+  font-size: 19px;
 }
 
 /* sets pseudolinks for the webpage's links */
