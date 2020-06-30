@@ -107,6 +107,10 @@ footer{
   font-weight: bold;
 }
 
+.app-content{
+  margin: 10%;
+}
+
 
 /* sets pseudolinks for the webpage's links */
 a:link {color: blue;}
