@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -10,7 +10,7 @@
     <!-- links for other font families found on Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   </head>
   
   <body>
@@ -23,6 +23,7 @@
       <!-- nav links to the respective sections within the page -->
       <nav>
         <a href="#about-me">About Me</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -34,65 +35,95 @@
     <main>
 
       <!-- intro class containing the image and introduction -->
-    <div class="intro">
-
-      <!-- round-pic class containing the image of me standing in the snow -->
-      <img class="round-pic" src="images/snow.jpg" alt="hiking-in-snow">
-
-      <!-- hello-container class which contains a brief intro and some things I love -->
-      <div class="hello-container">
-
-        <h2>Hello!</h2>
-        <p>I'm James, a software developer based out of Salt Lake City, UT and I love what I do!</p>
-        <p>Other Things I Love:</p>
-
-        <!-- unordered list with bulleted list items -->
-        <ul>
-          <li>Traveling</li>
-          <li>Camping</li>
-          <li>Playing Ultimate Frisbee</li>
-          <li>My dog</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- horizontal rule -->
-      <hr>
+      <section class="intro">
+        <div class="group">
+          <div class="item">
+            <img class="round-pic" src="images/snow.jpg" alt="hiking-in-snow">
+          </div>
+          <div class="item">
+            <h2>Hello!</h2>
+            <p>I'm James, a software developer based out of Salt Lake City, UT. I have a background in Mechanical Engineering, but I recently made the switch to being a full-time Software Developer and I love what I do!</p>
+            <p>I specialize in creating interactive apps and websites. As a new developer, I'm always eager to take on new projects and learn new things along the way! </p>
+            <p>Please take a look at some of the <a href="#portfolio">apps</a> that I've created, and let me know what you think!</p>
+          </div>
+        </div>
+      </section>
 
       <!-- about-me class containing the entire about me section -->
-      <div class="about-me-container">
-
-        <!-- article container with the id="about-me". The "About Me" link at the top of the page brings you here -->
+      <section class="about-me">
         <article id="about-me">
-          <h2>About Me</h2>
-          <p>After obtaining my Bachelor's degree in Mechanical Engineering, I worked as a Systems Engineer on a large construction project. However, I knew I had a great interest in programming, and after dabbling in the coding world, I decided it was something I wanted to pursue further. </p>
-          <p>I am currently enrolled in the Software Engineering program at Thinkful, and I'm excited to grow my skills as a Software Developer! As a new developer, I love working with others, and am always eager to learn more!</p>
-        </article>
-      </div>
-
-      <!-- horizontal rule -->
-      <hr>
-
-      <!-- contact container class containing the entire contact section -->
-      <div class="contact-container">
-
-        <!-- article container with the id="contact". The "Contact" link at the top of the page brings you here -->
-        <article id="contact">
-          <h2>Contact</h2>
-
-          <!-- div with the class "thanks" which singles out the sentence "Thanks for visiting my page!" -->
-          <div class="thanks">
-            <p>Thanks for visiting my page!</p>
+          <div class="group">
+            <div class="item-double">
+              <h2>About Me</h2>
+              <p>After obtaining my Bachelor's degree in Mechanical Engineering, I worked as a Systems Engineer on a large construction project. However, I knew I had a great interest in programming, and after dabbling in the coding world, I decided it was something I wanted to pursue further. </p>
+              <p>I am currently enrolled in the Software Engineering program at Thinkful, and I'm excited to grow my skills as a Software Developer! As a new developer, I love working with others to get different perspectives and ideas. Though coding is difficult, learning to embrace the challenges has helped me apprieciate those AHA! moments when everything finally comes together.</p>
+              <p>When I'm not programming, you might find me outside enjoying one of my many outdoor hobbies, including hiking, camping, playing ultimate frisbee, and walking my dog, among others. My passion for the outdoors has led me to travel the country in a self-converted camper van for a year, where I was able to see countless beautiful sights. Towards the end of my travels, I quickly fell in love with Utah and ultimately decided to make Salt Lake City my home!</p>
+              <p>As a full-stack developer, I specialize in building quick and responsive web apps from the ground up. Feel free to <a href="#contact">contact me</a> if you would like to know more about what I can do for you!
+            </div>
+            <div class="item">
+              <img class="van-pic" src="images/van-pic.jpg" alt="van-pic">
+            </div>
           </div>
-          <p>If you or anyone you know is looking to hire a developer, or if you have any questions, please feel free to contact me via the following:</p>
         </article>
+      </section>
 
-        <!-- ordered list -->
-        <ol>
-          <li><a href="https://www.linkedin.com/in/james-kernan-9043a482/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://github.com/JamesK-Projects" target="_blank">GitHub</a></li>
-        </ol>
-      </div>
+      <!-- portfolio class containing the portfolio -->
+      <section class="portfolio">
+        <article id="portfolio">
+          <h2>Portfolio</h2>
+          <div class="group">
+            <div class="item">
+              <img class="app-screenshot" src="images/app-under-construction.jpg" alt="screenshot-1">
+              <p class="app-name"><a href="#">App #1</a></p>
+              <p>App #1 description</p>
+            </div>
+            <div class="item">
+              <img class="app-screenshot" src="images/app-under-construction.jpg" alt="screenshot-2">
+              <p class="app-name"><a href="#">App #2</a></p>
+              <p>App #2 description</p>
+            </div>
+          </div>
+          <div class="group">
+            <div class="item">
+              <img class="app-screenshot" src="images/app-under-construction.jpg" alt="screenshot-3">
+              <p class="app-name"><a href="#">App #3</a></p>
+              <p>App #3 description</p>
+            </div>
+            <div class="item">
+              <img class="app-screenshot" src="images/app-under-construction.jpg" alt="screenshot-4">
+              <p class="app-name"><a href="#">App #4</a></p>
+              <p>App #4 description</p>
+            </div>
+          </div>
+        </article>
+      </section>
+          
+      <!-- contact class containing the entire contact section -->
+      <section class="contact">
+        <article id="contact">
+          <div class="group">
+            <div class="item">
+              <h2>Contact</h2>
+                <div class="thanks">
+                  <p>Thanks for visiting my page!</p>
+                </div>
+              <p>If you or anyone you know is looking to hire a developer, or if you have any questions, please feel free to contact me via the following:</p>
+
+               <!-- ordered list of my contact info -->
+              <ol>
+                <li>Email: Jtkernan92@gmail.com</li>
+                <li><a href="https://www.linkedin.com/in/james-kernan-9043a482/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/JamesK-Projects" target="_blank">GitHub</a></li>
+              </ol>
+            </div>
+            <div class="item">
+
+              <!-- embedded google map view of Salt Lake City, UT -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75901.13873969413!2d-111.92391740461089!3d40.755382134848055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1593532752547!5m2!1sen!2sus" height="450" width="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
 
     <!-- footer with my name and the copyright logo -->
