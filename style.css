@@ -11,24 +11,23 @@ body{
 /* styles the header container */
 header{
   text-align: center;
-  padding: 20px;
-  margin: 0;
-  background-color: rgba(124, 172, 190, 0.582);
+  padding: 10px;
+  background-color: rgba(0, 132, 255, 0.158);
 }
 
 /* sets the color for the heading and sub-heading */
 h1, h3{
-  color: rgba(9, 9, 100, 0.918);
+  color: rgb(51, 106, 189);
 }
 
 /* sets the font family of h1 */
 h1{
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* sets the font family of h3 */
 h3{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family: 'Oswald', sans-serif;
 }
 
 /* sets the font family of the links within the nav container */
@@ -47,13 +46,18 @@ nav > a{
   margin-left: auto;
 }
 
-/* styles the hello, about-me, and contact containers */
-.hello-container, .about-me-container, .contact-container{
-  width: 55%;
-  text-align: left;
-  margin: auto;
-  height: 300px;
+/* styles the about me class */
+.about-me{
+  background-color:rgba(95, 145, 160, 0.356);
+  padding: 10px 10px;
 }
+
+/* styles the image of the van */
+img.van-pic{
+  border-radius: 8px;
+  width: 100%;
+}
+
 
 /* styles the h2 elements */
 h2{
@@ -66,6 +70,7 @@ h2{
 p, li{
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(64, 77, 43);
+  text-align: left;
 }
 
 /* aligns the lists left */
@@ -82,16 +87,26 @@ footer{
   text-align: center;
 }
 
-/* sets the width of the horizontal rules */
-hr{
-  width: 60%;
-}
-
 /* centers the text within the thanks container */
-.thanks{
+.thanks > p{
   text-align: center;
   font-size: 19px;
 }
+
+/* styles each of the app screenshots */
+.app-screenshot{
+  width:80%;
+  border-radius: 10%;
+  text-align: center;
+  margin: auto;
+}
+
+/* styles the font of the app names */
+.app-name{
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 /* sets pseudolinks for the webpage's links */
 a:link {color: blue;}
@@ -99,6 +114,41 @@ a:visited {color: purple;}
 a:hover {color: green;}
 a:active {color: pink;}
 
+
+/* ----- groups & items (mobile first) ----- */
+
+/* styles the group classes so that the items within them are viewed vertically (mobile view) */
+.group{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* styles the item classes within the group classes */
+.item{
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+}
+
+/* styles the item-double class so that it is twice as wide as the item class when viewed from a desktop */
+.item-double{
+  flex: 2;
+  margin: 20px;
+}
+
+
+
+/* groups & items (desktop) */
+
+/* Media query statement that makes changes to the layout when viewed from a desktop */
+@media all and (min-width: 800px){
+  .group{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
 
 
 
