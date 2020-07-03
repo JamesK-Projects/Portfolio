@@ -4,7 +4,7 @@
 
 /* sets the background color for entire page */
 body{
-  background-color:aliceblue;
+  background-color: #ececec;
   margin: 0;
 }
 
@@ -12,7 +12,7 @@ body{
 header{
   text-align: center;
   padding: 10px;
-  background-color: rgba(0, 132, 255, 0.158);
+  background-color: #30475e;
 }
 
 header nav{
@@ -27,24 +27,16 @@ header nav a{
   margin: 0 10px 0 10px;
 }
 
-/* sets the color for the heading and sub-heading */
-h1, h3{
-  color: rgb(51, 106, 189);
-}
-
-/* sets the font family of h1 */
+/* styles the h1 heading */
 h1{
+  color: rgb(255, 255, 255);
   font-family: 'Oswald', sans-serif;
 }
 
-/* sets the font family of h3 */
-h3{
-  font-family: 'Oswald', sans-serif;
-}
 
 /* sets the font family of the links within the nav container */
 nav > a{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'EB Garamond', serif;
 }
 
 /* styles and centers the image */
@@ -53,14 +45,17 @@ nav > a{
   border-style: solid;
   border-width: 3px;
   border-radius: 50%;
-  width: 400px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.intro .group {
+  margin-bottom: 20px;
 }
 
 /* styles the about me class */
 .about-me{
-  background-color:rgba(95, 145, 160, 0.356);
+  background-color: #b9945c80;
   padding: 10px 10px;
 }
 
@@ -73,29 +68,30 @@ img.van-pic{
 
 /* styles the h2 elements */
 h2{
+  text-height: 26px;
   text-align: center;
-  font-family: 'Lobster', cursive;
-  color: rgba(79, 104, 39, 0.829);
+  font-family: 'Oswald', sans-serif;
+  color: #313d4e;
 }
 
 /* styles the text within the paragraph and list elements */
 p, li{
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(64, 77, 43);
+  font-family: 'EB Garamond', serif;
+  color: #222831;
   text-align: left;
+  font-size: 18px;
 }
 
 /* aligns the lists left */
 ul{
   text-align: left;
-  margin-left: 5%;
 }
 
 /* styles the footer at the bottom of the page */
 footer{
-  background-color: rgba(124, 172, 190, 0.582);
+  background-color: #30475e;
   padding: 10px;
-  color: rgba(9, 9, 100, 0.918);
+  color: white;
   text-align: center;
 }
 
@@ -128,8 +124,8 @@ form label{
   display: block;
   font-size: 18px;
   margin-top: 5px;
-  color: rgb(64, 77, 43);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #222831;
+  font-family: 'EB Garamond', serif;
   text-align: left;
 }
 
@@ -162,6 +158,11 @@ a:visited {color: purple;}
 a:hover {color: green;}
 a:active {color: pink;}
 
+nav a:link {color: white;}
+nav a:visited {color: #b9b9b9;}
+nav a:hover {color: rgb(254, 255, 183);}
+nav a:active {color: pink;}
+
 
 /* ----- groups & items (mobile first) ----- */
 
@@ -182,7 +183,11 @@ a:active {color: pink;}
 /* styles the item-double class so that it is twice as wide as the item class when viewed from a desktop */
 .item-double{
   flex: 2;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
+}
+
+.item .map{
+  width: 100%;
 }
 
 
@@ -214,14 +219,18 @@ a:active {color: pink;}
     padding-top: 6px;
   }
 
-  header h3{
-    font-size: 24px;
-  }
-
   header nav {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 20px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  .item .van-pic{
+    margin-top: 60px;
   }
 
 }
