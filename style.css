@@ -68,7 +68,7 @@ img.van-pic{
 
 /* styles the h2 elements */
 h2{
-  text-height: 26px;
+  height: 26px;
   text-align: center;
   font-family: 'Oswald', sans-serif;
   color: #313d4e;
@@ -103,8 +103,10 @@ footer{
 
 /* styles each of the app screenshots */
 .app-screenshot{
-  width:80%;
-  border-radius: 10%;
+  width:90%;
+  border-radius: 4mm;
+  border-style: solid;
+  border-width: 1px;
   text-align: center;
   margin: auto;
 }
@@ -116,7 +118,7 @@ footer{
 }
 
 .app-content{
-  margin: 10%;
+  margin: 5%;
   margin-top: 20px;
 }
 
