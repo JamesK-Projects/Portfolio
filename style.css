@@ -161,9 +161,13 @@ a:hover {color: green;}
 a:active {color: pink;}
 
 nav a:link {color: white;}
-nav a:visited {color: #b9b9b9;}
-nav a:hover {color: rgb(254, 255, 183);}
+nav a:visited{color: white;}
+nav a:hover {color: rgb(251, 253, 135);}
 nav a:active {color: pink;}
+
+img.app-screenshot {border-color: black}
+img.app-screenshot:hover {opacity: 0.6}
+
 
 
 /* ----- groups & items (mobile first) ----- */
