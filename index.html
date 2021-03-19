@@ -42,8 +42,8 @@
           </div>
           <div class="item">
             <h2>Hello!</h2>
-            <p>I'm James, a software developer based out of Salt Lake City, UT. I have a background in Mechanical Engineering, but I recently made the switch to being a full-time Software Developer and I love what I do!</p>
-            <p>I specialize in creating interactive apps and websites. As a new developer, I'm always eager to take on new projects and learn new things along the way! </p>
+            <p>I'm James, a Software Developer based out of Salt Lake City, UT. I have a background in Mechanical Engineering, but I recently made the switch to being a full-time Software Developer and I love what I do!</p>
+            <p>I specialize in creating full-stack interactive apps and websites. As a new developer, I'm always eager to take on new projects and learn new things along the way! </p>
             <p>Please take a look at some of the <a href="#portfolio">apps</a> that I've created, and let me know what you think!</p>
           </div>
         </div>
@@ -51,10 +51,10 @@
 
       <!-- about-me class containing the entire about me section -->
       <section class="about-me">
+        <h2>About Me</h2>
         <article id="about-me">
           <div class="group">
             <div class="item-double">
-              <h2>About Me</h2>
               <p>After obtaining my Bachelor's degree in Mechanical Engineering, I worked as a Systems Engineer on a large construction project. However, I knew I had a great interest in programming, and after dabbling in the coding world, I decided it was something I wanted to pursue further. </p>
               <p>I am currently enrolled in the Software Engineering program at Thinkful, and I'm excited to grow my skills as a Software Developer! As a new developer, I love working with others to get different perspectives and ideas. Though coding is difficult, learning to embrace the challenges has helped me appreciate those AHA! moments when everything finally comes together.</p>
               <p>When I'm not programming, you might find me outside enjoying one of my many outdoor hobbies, including hiking, camping, playing ultimate frisbee, and walking my dog, among others. My passion for the outdoors has led me to travel the country in a self-converted camper van for a year, where I was able to see countless beautiful sights. Towards the end of my travels, I quickly fell in love with Utah and ultimately decided to make Salt Lake City my home!</p>
@@ -70,67 +70,72 @@
       <!-- portfolio class containing the portfolio -->
       <section class="portfolio">
         <article id="portfolio">
-          <h2>Portfolio</h2>
-          <div class="group">
-            <div class="item">
-              <a href="https://jamesk-projects.github.io/News-For-You/" target="_blank"><img class="app-screenshot" src="images/news-for-you.jpg" alt="screenshot of 'News For You' app"></a>
-              <div class="app-content">
-                <p class="app-name"><a href="https://jamesk-projects.github.io/News-For-You/" target="_blank">News For You</a></p>
-                <p>News For You is a news app that was built using HTML, CSS, JavaScript, and jQuery. It gathers news articles from the Contextual Web Search API and videos from the Youtube API based on the user's search parameters.</p>
+          <h2 class="portfolio-heading">Portfolio</h2>
+            <p class="app-name"><a href="https://jamesk-projects.github.io/News-For-You/" target="_blank">News For You</a></p>
+            <div class="group">
+              <div class="item">
+                <a href="https://jamesk-projects.github.io/News-For-You/" target="_blank"><img class="app-screenshot" src="images/news-for-you.jpg" alt="screenshot of 'News For You' app"></a>
+              </div>  
+              <div class="app-content item">
+                <p>News For You is a news app that allows a user to search for relevant news by displaying news articles and videos based on the user's search parameters.</p>
+                <p>News For You was built using HTML, CSS, JavaScript, and jQuery, and fetches data from the Contextual Web Search API the Youtube API.</p>
                 <p>View this project on <a href="https://github.com/JamesK-Projects/news-for-you" target="_blank">GitHub</a></p>
               </div>
             </div>
-            <div class="item">
-              <a href="https://igift-app.vercel.app/" target="_blank"><img class="app-screenshot" src="images/iGift.png" alt="screenshot of 'iGift' app"></a>
-              <div class="app-content">
-                <p class="app-name"><a href="https://igift-app.vercel.app/" target="_blank">iGift</a></p>
-                <p>iGift is a full-stack web app that helps helps consumers with their holiday shopping by keeping track of what they buy and showing how it affects their budget. It utilizes React and CSS on the frontend and interacts with a server built with Node.js, Express, and PostgreSQL.</p>
+            <hr />
+            <p class="app-name"><a href="https://igift-app.vercel.app/" target="_blank">iGift</a></p>
+            <div class="group-reverse">
+              <div class="item">
+                <a href="https://igift-app.vercel.app/" target="_blank"><img class="app-screenshot" src="images/iGift.png" alt="screenshot of 'iGift' app"></a>
+              </div>
+              <div class="app-content item">
+                <p>iGift is a full-stack web app that helps consumers with their holiday shopping by keeping track of what they buy and showing how it affects their budget. Users set a budget and input the prices for each gift they buy, and iGift updates their remaining budget as they go.</p>
+                <p>iGift utilizes React and CSS on the frontend and interacts with a server built with Node.js, Express, and PostgreSQL.</p>
                 <p>View the <a href="https://github.com/JamesK-Projects/igift-app" target="_blank">Client-side</a> and <a href="https://github.com/JamesK-Projects/igift-server" target="_blank">Server-side</a> code on GitHub</p>
               </div>
             </div>
-          </div>
-          <!-- <div class="group">
-            <div class="item">
-              <img class="app-screenshot" src="images/noteful.jpg" alt="screenshot of 'Noteful' app">
-              <div class="app-content">
-                <p class="app-name"><a href="https://github.com/JamesK-Projects/noteful" target="_blank">Noteful</a></p>
-                <p>Noteful is a handy note-taking app that allows you to create notes and organize them into folders. It was built using various React components, and styled with CSS.</p>
-                <p>View this project on <a href="https://github.com/JamesK-Projects/noteful" target="_blank">GitHub</a></p>
+            <hr />
+            <p class="app-name"><a href="https://run-with-it-app.vercel.app/" target="_blank">Run With It</a></p>
+            <div class="group">
+              <div class="item">
+                <a href="https://run-with-it-app.vercel.app/" target="_blank"><img class="app-screenshot" src="images/runwithit-homepg.png" alt="screenshot of 'Run With It' app"></a>
+              </div>
+              <div class="app-content item">
+                <p>Run With It is a full-stack app built for runners. After creating an account and signing in, each user is able to set personal running goals to work towards. Users input the date, distance, time, and any notes for each run they go on, and Run With It uses the run data to create helpful graphs showing the user's progress.</p>
+                <p>Run With It utilizes React and CSS on the frontend and interacts with a server built with Node.js, Express, and PostgreSQL.</p>
+                <p>View the <a href="https://github.com/JamesK-Projects/run-with-it-app" target="_blank">Client-side</a> and <a href="https://github.com/JamesK-Projects/run-with-it-server" target="_blank">Server-side</a> code on GitHub</p>
               </div>
             </div>
-            <div class="item">
-              <img class="app-screenshot" src="images/app-under-construction.jpg" alt="screenshot-4">
-              <div class="app-content">
-                <p class="app-name"><a href="#">App #4</a></p>
-                <p>App #4 description</p>
-              </div>
-            </div>
-          </div> -->
+            <hr />    
         </article>
       </section>
           
       <!-- contact class containing the entire contact section -->
       <section class="contact">
         <article id="contact">
-          <div class="group">
-            <div class="item">
-              <h2>Contact</h2>
-                <div class="thanks">
-                  <p>Thanks for visiting my page!</p>
-                </div>
-              <p>If you or anyone you know is looking to hire a developer, or if you have any questions, please feel free to contact me via the following:</p>
-
-               <!-- unordered list of my contact info -->
-              <ul>
-                <li><a href="mailto:Jtkernan92@gmail.com">Email: Jtkernan92@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/james-kernan-9043a482/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/JamesK-Projects" target="_blank">GitHub</a></li>
-              </ul>
-              <br>
-              <p>Or leave me a message in the form below:</p>
+          <h2>Contact</h2>
+            <div class="thanks">
+              <p>Thanks for visiting my page!</p>
+            </div>
+            <p class="contact-statement">If you or anyone you know is looking to hire a developer, or if you have any questions, please feel free to contact me via the following:</p>
+            
+            <div class="contact-icons">
+              <a href="mailto:Jtkernan92@gmail.com" target="_blank">
+                <img class="email-icon" src="images/email.png" alt="email-icon">
+              </a>
+              <a href="https://www.linkedin.com/in/james-kernan/" target="_blank">
+                <img class="linkedin-icon" src="images/linkedin.png" alt="linkedin-icon">
+              </a>
+              <a href="https://github.com/JamesK-Projects" target="_blank">
+                <img class="github-icon" src="images/github.png" alt="github-icon">
+              </a>
+            </div>
+            <div class="contact-form">
+              <p class="leave-a-message">Or leave me a message in the form below:</p>
               <form
-              action="https://formspree.io/xeqrlbbk"
-              method="POST">
+                action="https://formspree.io/xeqrlbbk"
+                method="POST"
+              >
                 <label for="name">Name:</label>
                 <input id="name" type="text" name="name" required />
 
@@ -140,17 +145,11 @@
                 <label for="message">Your Message:</label>
                 <textarea id="message"  required maxlength="200" name="message"></textarea>
                 <br>
-                <button type="submit">Submit</button>
+                <div class="button-container">
+                  <button class="button" type="submit">Submit</button>
+                </div>
               </form>
-              
             </div>
-
-            <div class="item">
-
-              <!-- embedded google map view of Salt Lake City, UT -->
-              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d93457.55022222825!2d-111.8939355347238!3d40.728119568880985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1593736381474!5m2!1sen!2sus" height="450" width="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-          </div>
         </article>
       </section>
     </main>

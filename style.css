@@ -25,12 +25,14 @@ header nav a{
   list-style: none;
   text-decoration: none;
   margin: 0 10px 0 10px;
+  text-shadow: rgb(0, 0, 0) 0 3px 15px;
 }
 
 /* styles the h1 heading */
 h1{
   color: rgb(255, 255, 255);
   font-family: 'Oswald', sans-serif;
+  text-shadow: rgb(0, 0, 0) 0 3px 15px;
 }
 
 
@@ -43,10 +45,11 @@ nav > a{
 .round-pic{
   display: block;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-radius: 50%;
   width: 80%;
   margin: 20px auto 0 auto;
+  box-shadow: rgba(49, 54, 85, 0.562) 0px 1px 20px;
 }
 
 .intro .group {
@@ -55,14 +58,15 @@ nav > a{
 
 /* styles the about me class */
 .about-me{
-  background-color: #b9945c80;
-  padding: 10px 10px;
+  background-color: #b9945c3a;
+  padding-top: 1px;
 }
 
 /* styles the image of the van */
 img.van-pic{
   border-radius: 8px;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.336) 0 1px 20px;
 }
 
 
@@ -109,12 +113,15 @@ footer{
   border-width: 1px;
   text-align: center;
   margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.336) 0 1px 20px;
 }
 
 /* styles the font of the app names */
 .app-name{
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
+  text-align: center;
+  margin-top: 40px;
 }
 
 .app-content{
@@ -153,10 +160,50 @@ form textarea{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+hr{
+  width: 80%;
+  border-bottom: none;
+  margin-top: 30px;
+}
+
+.contact-statement{
+  text-align: center;
+  margin: 20px;
+}
+
+.contact-icons{
+  text-align: center;
+}
+
+.contact-icons>a{
+  text-decoration: none;
+}
+
+.email-icon, .linkedin-icon, .github-icon{
+  width: 40px;
+  margin: 10px;
+}
+
+.leave-a-message{
+  text-align: center;
+}
+
+form{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-container{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 
 /* sets pseudolinks for the webpage's links */
-a:link {color: blue;}
-a:visited {color: purple;}
+a:link {color: #396bb3;}
+a:visited {color: #396bb3;}
 a:hover {color: green;}
 a:active {color: pink;}
 
@@ -208,6 +255,12 @@ img.app-screenshot:hover {opacity: 0.6}
     width: 100%;
   }
 
+  .group-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+
   .item .map{
     height: 80%;
     width: 80%;
@@ -231,12 +284,22 @@ img.app-screenshot:hover {opacity: 0.6}
     font-size: 20px;
   }
 
+  .portfolio-heading{
+    margin-bottom: 40px;
+  }
+
   p{
     font-size: 20px;
   }
 
   .item .van-pic{
     margin-top: 60px;
+  }
+
+  form{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
